@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PAL",
+      "hasCanvas": true,
+      "bodyTextLen": 897,
+      "bodyTextHash": "5a987288af6d3d577459afc13a6ac4f68770dbb2379de03c81639a69b13e0cc4",
+      "bodyTextPrefix": "PAL Home Evaluation Approvals Sign in Sahara CodeSwitch Africa C",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PAL",
+      "hasCanvas": true,
+      "bodyTextLen": 897,
+      "bodyTextHash": "68d10159611b8f78df9fc5f22492b1e3faf3333271db1928516adc510224ac37",
+      "bodyTextPrefix": "PAL Sign in Home Evaluation Approvals Sahara CodeSwitch Africa C",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

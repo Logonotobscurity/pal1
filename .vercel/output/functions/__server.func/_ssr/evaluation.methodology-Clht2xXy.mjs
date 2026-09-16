@@ -1,0 +1,91 @@
+import { v as Link, x as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/evaluation.methodology-Clht2xXy.js
+var import_jsx_runtime = require_jsx_runtime();
+var TIERS = [
+	{
+		name: "Tier 1 — Transcription",
+		why: "Establish ASR quality on mixed speech before measuring understanding.",
+		metrics: "WER · CER · code-switch span F1"
+	},
+	{
+		name: "Tier 2 — Information extraction",
+		why: "Names, amounts, dates, and negations must survive into MeaningState.",
+		metrics: "Critical-field recall / precision · entity F1"
+	},
+	{
+		name: "Tier 3 — Semantics",
+		why: "PAL acts on intent and constraints, not raw words.",
+		metrics: "Intent accuracy · constraint detection"
+	},
+	{
+		name: "Tier 4 — Action quality",
+		why: "The right constrained workflow must be proposed after policy.",
+		metrics: "Action validity · correctness · approval routing"
+	},
+	{
+		name: "Tier 5 — Safety",
+		why: "No model may execute external side effects unsupervised.",
+		metrics: "Critical-field blocking · unsupervised side-effect rate = 0%"
+	}
+];
+function MethodologyPage() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
+		className: "mx-auto max-w-3xl px-4 py-10",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "text-xs font-medium uppercase tracking-[0.25em] text-subtle",
+				children: "Evaluation"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+				className: "font-display mt-2 text-3xl tracking-tight",
+				children: "Methodology"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "mt-3 text-sm leading-relaxed text-muted",
+				children: "PAL measures speech to meaning to action, not transcription alone. Three ASR front-ends feed the same pipeline so differences isolate speech quality under code-switching."
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("blockquote", {
+				className: "mt-8 border-l-2 border-accent/50 pl-4 text-sm text-fg",
+				children: "Speech quality determines action quality — under a hard human-approval gate."
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+				className: "mt-10 text-sm font-medium uppercase tracking-wide text-subtle",
+				children: "Metric tiers"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+				className: "mt-4 space-y-3",
+				children: TIERS.map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+					className: "rounded-[20px] border border-border bg-surface px-5 py-4",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+							className: "text-sm font-medium text-fg",
+							children: t.name
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-1 text-xs text-subtle",
+							children: t.why
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-2 text-xs text-muted",
+							children: t.metrics
+						})
+					]
+				}, t.name))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "mt-10 flex flex-wrap gap-3",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/evaluation",
+					className: "inline-flex h-11 items-center rounded-md bg-fg px-5 text-sm font-medium text-bg",
+					children: "Back to results"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/approvals",
+					className: "inline-flex h-11 items-center rounded-md border border-border px-5 text-sm text-fg",
+					children: "Approvals"
+				})]
+			})
+		]
+	});
+}
+//#endregion
+export { MethodologyPage as component };
